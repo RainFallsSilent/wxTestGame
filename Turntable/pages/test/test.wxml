@@ -1,0 +1,47 @@
+<!--pages/test/test.wxml-->
+<view class="containerComputer">
+  <view wx:for="{{computerCardList}}" class="cardBase {{(item.cardNumber % 2 == 0)? 'computerCardBlack': 'computerCardWhite'}} {{(item.cardNumber == currentComputerSelectedIndex)? 'computerPopUpCard': ' '}}">
+  </view>
+</view>
+
+<view class="containerGame">
+  <view class="containerComputerOut">
+    <view wx:for="{{computerOutCardList}}" class="cardBase {{(item.cardNumber % 2 == 0)? 'computerCardBlack': 'computerCardWhite'}}">
+    </view>
+  </view>
+
+  <view class="containerPlayerOut">
+    <view wx:for="{{playerOutCardList}}" class="cardBase {{(item.cardNumber % 2 == 0)? 'cardBlack': 'cardWhite'}} {{(item.cardNumber > computerOutCardList[index].cardNumber)?'winCard':(item.cardNumber < computerOutCardList[index].cardNumber)?'lossCarde':'qualCard'}}">
+      <image class="card-image" src="{{imageCardList[item.cardNumber - 1]}}" mode="scaleToFill;"></image>
+    </view>
+  </view>
+</view>
+
+<view class="containerPlayer">
+  <view wx:for="{{playerCardList}}" class="cardBase {{(item.cardNumber % 2 == 0)? 'cardBlack': 'cardWhite'}} {{(item.cardNumber == currentPlayerSelectedIndex)? 'popUpCard': ' '}}" data-pCardNumber="{{item.cardNumber}}"  bindtap="clickSelectCard">
+    <image class="card-image" src="{{imageCardList[item.cardNumber - 1]}}" mode="scaleToFill;"></image>
+  </view>
+</view>
+
+<view>
+<button bindtap="playCard" type="background-color: red">出牌</button>
+</view>
+
+<!--
+<view class=" section ">
+<view class="containerComputer " style="flex-direction: row; " >
+  <view class="cardBase cardBlack " >
+      <image class="card-image " src="{{imageCardList[0]}} " mode ="scaleToFill; "></image>
+  </view>
+  <view class="cardBase cardWhite " >
+      <image class="card-image " src="{{imageCardList[1]}} " mode ="scaleToFill; "></image>
+  </view>
+  <view class=" cardBase cardBlack " >
+      <image class="card-image " src="{{imageCardList[2]}} " mode ="scaleToFill; "></image>
+  </view>
+</view>
+</view>-->
+<!--<view class="containerPlayer " wx:for="{{playerCardList}} " style="top:{{item.topAward}}rpx;left:{{item.leftAward}}rpx;background-color: {{(index==indexSelect)?colorAwardSelect:colorAwardDefault}}; ">
+      <image class="award-image " src="{{item.imageAward}} "></image>
+</view>
+ -->

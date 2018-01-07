@@ -1,0 +1,18 @@
+  
+  {
+    "window": {
+      "navigationBarBackgroundColor": "#ffff00",
+      "navigationBarTextStyle": "black",
+      "navigationBarTitleText": "小程序",
+      "backgroundColor": "#ff00ff",
+      "backgroundTextStyle": "light",
+      "enablePullDownRefresh": false
+    },
+   
+    "navigationBarBackgroundColor": "#ff0000",
+    "navigationBarTextStyle": "red",
+    "navigationBarTitleText": "幸运大转盘",
+    "backgroundColor": "#e685dc",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  }

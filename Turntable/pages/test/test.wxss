@@ -1,0 +1,183 @@
+/* pages/test/test.wxss */
+
+page {
+  background-color: #d87fde;
+}
+
+.container-out {
+  height: 600rpx;
+  width: 650rpx;
+  background-color: #b136b9;
+  margin: 100rpx auto;
+  border-radius: 40rpx;
+  box-shadow: 0 10px 0 #871a8e;
+  position: relative;
+}
+
+.containerGame {
+  width: 720rpx;
+  height: 420;
+  background-color: #871a8e;
+  border-radius: 40rpx;
+  display: flex;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.containerComputer {
+  width: 720rpx;
+  height: 210rpx;
+  background-color: #871a8e;
+  border-radius: 40rpx;
+  display: flex;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.containerComputerOut {
+  width: 720rpx;
+  height: 210rpx;
+  background-color: #871a8e;
+  border-radius: 40rpx;
+  display: flex;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.containerPlayerOut {
+  width: 720rpx;
+  height: 210rpx;
+  background-color: #871a8e;
+  border-radius: 40rpx;
+  display: flex;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.containerPlayer {
+  width: 720rpx;
+  height: 210rpx;
+  background-color: #871a8e;
+  border-radius: 40rpx;
+  display: flex;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.computerCardBlack {
+  background-color: #0f0f0f;
+  box-shadow: 0 5px 0 #000;
+}
+
+.computerCardWhite {
+  background-color: #f0f0f0;
+  box-shadow: 0 5px 0 #fff;
+}
+
+.cardBlack {
+  background-color: #eee5de;
+  box-shadow: 0 5px 0 #000;
+}
+
+.cardWhite {
+  background-color: #eee5de;
+  box-shadow: 0 5px 0 #fff;
+}
+
+.cardBase {
+  height: 150rpx;
+  width: 70rpx;
+  border-radius: 15rpx;
+  margin-top: 20rpx;
+  margin-right: 3px;
+  margin-left: 3px;
+  margin-bottom: 10rpx;
+  align-items: center;
+  display: flex;
+}
+
+/**居中 加粗*/
+
+.start-btn {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 15rpx;
+  height: 150rpx;
+  width: 166.6666rpx;
+  background-color: #ffe400;
+  box-shadow: 0 5px 0 #e7930a;
+  color: #f6251e;
+  text-align: center;
+  font-size: 40rpx;
+  font-weight: bolder;
+  line-height: 150rpx;
+}
+
+.card-image {
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 140rpx;
+  width: 130rpx;
+}
+
+.popUpCard {
+  position: relative;
+  top: -10px;
+}
+
+.computerPopUpCard {
+  position: relative;
+  top: 10px;
+}
+
+.winCard
+{
+  background-color: rgba(0,200,0, 0.7) 
+}
+
+.lossCard
+{
+  background-color: rgba(100,50,50, 0.7) 
+}
+
+.equalCard
+{
+  background-color: #eee5de
+}
